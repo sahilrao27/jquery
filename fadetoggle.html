@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeToggle();
+    $("#div2").fadeToggle("slow");
+    $("#div3").fadeToggle(3000);
+  });
+});
+</script>
+</head>
+<body>
+
+<p> fadeToggle</p>
+
+<button>Click to fade in/out boxes</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;background-color:rgb(104, 174, 29);"></div>
+<br>
+<div id="div2" style="width:80px;height:80px;background-color:rgb(116, 190, 214);"></div>
+<br>
+<div id="div3" style="width: 0;
+height: 0;
+border-top: 50px solid transparent;
+border-right: 100px solid burlywood;
+border-bottom: 50px solid transparent;background-color:rgb(255, 255, 255);"></div>
+
+<div id="div4"  #triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 100px solid red;
+    border-bottom: 50px solid transparent;
+  }
+</div>
+</body>
+</html>
