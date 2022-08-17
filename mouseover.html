@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://code.jquery.com/ui/jquery-ui-git.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+    <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+
+    <script type="text/javascript">
+        $(Document).ready(
+
+function() {
+    $("#divid").accordion({
+        event: "mouseover"
+    });
+    var event = $("#divid").accordion("option", "event");
+
+    $("#divid").accordion("option", "event", "mouseover");
+});
+
+    </script>
+
+<body>
+    <p><b>Heyyaaaa!!!</b></p>
+    <div id="divid">
+       <h3>Sahil</h3>
+       <div>I'm from India.<br>I'm a student of BCA in Silver Oak University in Ahmedabad.<br></div>
+       <h3>BCA Full Form</h3>
+       <div>Bachelor of Computer Application</div>
+    </div>
+    </body>
+</html>
